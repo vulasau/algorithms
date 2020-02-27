@@ -20,6 +20,9 @@ namespace Algorithms.App
 
             var comb = Measure(() => array.CombSort(), out elapsed);
             Console.WriteLine("Comb Sort: elapsed {0}ms", elapsed.TotalMilliseconds);
+
+            var insertion = new int[5];
+            Console.WriteLine(string.Join(",", insertion));
         }
 
         static T Measure<T>(Func<T> func, out TimeSpan elapsed)
